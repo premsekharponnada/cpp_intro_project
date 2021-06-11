@@ -1,3 +1,0 @@
-hello_test, 0 0
-comparestrings.Test1 3 0.00175332
----
