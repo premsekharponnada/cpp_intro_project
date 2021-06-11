@@ -1,0 +1,2 @@
+comparestrings.Test1 1 0.00531191
+---
