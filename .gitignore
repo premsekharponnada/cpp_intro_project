@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+#bin,build folders
+*.suo
+*.user
+_Reshaper.*
+bin
+obj
+packages
