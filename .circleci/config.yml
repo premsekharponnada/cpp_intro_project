@@ -20,10 +20,10 @@ jobs:
           command: "apt-get update && sudo apt-get install -y cmake"
       - run:
           name: Creating Build files
-          command: "cmake -S . -B build"
+          command: "cmake -S . -B"
       - run:
           name: Creating Binary files
-          command: "cmake --build build"
+          command: "cmake --build"
       - run:
           name: Hello world Unit Testing
-          command: "cd build && ctest"
+          command: "ctest"
