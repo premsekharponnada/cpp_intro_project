@@ -16,7 +16,7 @@ jobs:
             git submodule update
       - run:
           name: Creating Build files
-          command: "cmake -S . -B "
+          command: "cmake -S . -B"
       - run:
           name: Creating Binary files
           command: "cmake --build"
