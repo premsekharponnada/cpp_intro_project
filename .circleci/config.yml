@@ -16,10 +16,10 @@ jobs:
             git submodule update
       - run:
           name: Creating Build files
-          command: "cmake -S . -B"
+          command: "cmake -S . -B build"
       - run:
           name: Creating Binary files
-          command: "cmake --build"
+          command: "cmake --build build"
       - run:
           name: Hello world Unit Testing
           command: "ctest"
