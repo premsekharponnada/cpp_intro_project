@@ -1,7 +1,7 @@
 # cmake -H. -Bbuild
 # cmake --build build
 
-cmake_minimum_required(VERSION 3.20.3)
+cmake_minimum_required(VERSION 3.16.3)
 set(CMAKE_CXX_STANDARD 11)
 project(cpp_intro_project)
 
