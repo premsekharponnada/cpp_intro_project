@@ -22,4 +22,4 @@ jobs:
           command: "cmake --build build"
       - run:
           name: Hello world Unit Testing
-          command: "ctest"
+          command: "cd build && ctest"
