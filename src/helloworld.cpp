@@ -2,5 +2,5 @@
 using namespace std;
 string welcome()
 {
-    return "Hello ";
+    return "Hello World";
 }

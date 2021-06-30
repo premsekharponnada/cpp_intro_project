@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Setup gtest child repo
+          name: Setup gtest
           command: |
             cd third_party
             git submodule init
@@ -21,5 +21,5 @@ jobs:
           name: Creating Binary files
           command: "cmake --build build"
       - run:
-          name: Hello world Unit Testing
+          name: Unit Testing
           command: "cd build && ctest"

@@ -39,3 +39,5 @@ _Reshaper.*
 bin
 obj
 packages
+*.DS_store
+

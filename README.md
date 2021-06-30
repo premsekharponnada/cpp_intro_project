@@ -18,4 +18,8 @@ You need to have cmake,gtest installed in your machine, else use my docker image
 A brief reading of gtest, cmake documentation will give you an idea of how this repo works.
 Important links to read -- [setting up CI environment][cpp-url]
 
+## Key Notes
+
+This project uses CMake to build the cpp code of the project. For testing the code I used gtest since it has a nice user interface for writing test cases for the project. Later this project was linked with circle CI for continuous integration which means every commit made to this branch will run in the circle CI environment where one can check the status of build, test and rest of the jobs. I created my own Dockerfile for the docker image used in this project. One can use the same image or can develop a new one and upload it to your Docker Hub for usage.
+
 [cpp-url]: https://levelup.gitconnected.com/how-to-combine-c-cmake-googletest-circleci-docker-and-why-e02d76c060a3
