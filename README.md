@@ -19,11 +19,15 @@ Important links to read -- [setting up CI environment][cpp-url]
 
 To run the project, follow these commands in your local machine.
 
-1. First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
-2. GO into the project directory `cd cpp_intro_project`
-3. Build the code using cmake `cmake -S . -B build `
-4. Create the binary files `cmake --build build`
-5. Go into build directory consisting of files for run `cd build && ctest`
+First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
+
+Go into the project directory `cd cpp_intro_project`
+
+Build the code using cmake `cmake -S . -B build `
+
+Create the binary files `cmake --build build`
+
+Go into build directory consisting of files for run `cd build && ctest`
 
 ## Key Notes
 
