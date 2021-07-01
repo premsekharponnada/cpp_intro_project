@@ -15,6 +15,8 @@ To run the project, follow these commands in your local machine.
 
 You need to have cmake,gtest installed in your machine, else use my docker image in Dockerfile.
 
+You need to have C/C++ extension includes IntelliSense for linting support and Advanced C/C++ lint for static analyzer to detect any vulnerabilities in the code.
+
 A brief reading of gtest, cmake documentation will give you an idea of how this repo works.
 Important links to read -- [setting up CI environment][cpp-url]
 
