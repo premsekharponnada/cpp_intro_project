@@ -6,10 +6,10 @@ This project consists of my work in implementing a Hello world project with a un
 
 To run the project, follow these commands in your local machine.
 
-1. First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
-2. Build the code using cmake `cmake -S . -B build `
-3. Create the binary files `cmake --build build`
-4. Go into build directory consisting of files for run `cd build && ctest`
+1.First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
+2.Build the code using cmake `cmake -S . -B build `
+3.Create the binary files `cmake --build build`
+4.Go into build directory consisting of files for run `cd build && ctest`
 
 ## Prerequisites/Dependencies
 
