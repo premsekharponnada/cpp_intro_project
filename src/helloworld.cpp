@@ -2,7 +2,7 @@
 using namespace std;
 string welcome()
 {
-    return "Hello World";
+    return "Hello ";
 }
 void addition()
 {
@@ -12,6 +12,6 @@ void addition()
         {
             int count;
             count = +1;
-        }
+                }
     }
 }
