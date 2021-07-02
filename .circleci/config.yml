@@ -19,8 +19,8 @@ jobs:
           command: |
             mkdir build
             cd build
-            cmake ..
-            make
+            cmake -S . -B build
+            cmake --build build
       #     command: "cmake -S . -B build"
       # - run:
       #     name: Creating Binary files
