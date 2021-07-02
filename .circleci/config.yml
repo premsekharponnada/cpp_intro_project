@@ -39,6 +39,7 @@ jobs:
           root: .
           paths:
             - build/*
+            - bin/*
   # separate job for test
   test:
     executor: exectr
