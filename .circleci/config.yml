@@ -4,7 +4,7 @@ executors:
     docker:
       - image: premsekhar/dockercppintroproject:latest
 jobs:
-  build:
+  App:
     executor: exectr
     steps:
       - checkout
