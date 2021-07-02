@@ -35,8 +35,8 @@ jobs:
       - run:
           name: Execute Tests
           command: |
-            cd build
-            ctest
+            cd build 
+            ls -lrt
 
 workflows:
   version: 2
