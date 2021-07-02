@@ -22,8 +22,6 @@ jobs:
             cmake ..
             make
             ctest
-            # cmake -S . -B build
-            # cmake --build build
 
       - persist_to_workspace:
           root: .
