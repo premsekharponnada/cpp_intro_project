@@ -38,6 +38,11 @@ jobs:
           command: |
             cd build
             ls -lrt /bin
+      - run:
+          name: executing test cases
+          command: |
+            cd build
+            ctest
       - persist_to_workspace:
           root: .
           paths:
