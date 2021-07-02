@@ -34,10 +34,13 @@ jobs:
             cd build
             ls -lrt
       - run:
-          name: testing whats inside bin 
+          name: testing whats inside bin inside build
           command: |
             cd build
             ls -lrt /bin
+      - run:
+          name: testing whats inside bin
+          command: ls -lrt /bin
       - run:
           name: executing test cases
           command: |
