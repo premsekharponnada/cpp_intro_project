@@ -49,7 +49,9 @@ jobs:
 
       - run:
           name: testing whats inside bin
-          command: ls -lrt bin/
+          command: |
+            cd build
+            ls -lrt bin/
 
 workflows:
   version: 2
