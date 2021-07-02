@@ -36,9 +36,11 @@ jobs:
           at: .
       - run:
           name: Execute Tests
-          command: |
-            cd build 
-            ls -lrt bin/
+          command: cd build
+
+      - run:
+          name: testing whats inside bin
+          command: ls -lrt bin/
 
 workflows:
   version: 2
