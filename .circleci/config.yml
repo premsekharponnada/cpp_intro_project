@@ -27,12 +27,7 @@ jobs:
           command: |
             cd build
             cmake ..
-            make
-      - run:
-          name: testing whats inside build
-          command: |
-            cd build
-            ls -lrt
+            make 
       
 
       - persist_to_workspace:
