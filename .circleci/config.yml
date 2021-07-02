@@ -21,6 +21,7 @@ jobs:
             cd build
             cmake ..
             make
+            ls -lrt bin/
             ctest
 
       - persist_to_workspace:
@@ -36,7 +37,7 @@ jobs:
           name: Execute Tests
           command: |
             cd build 
-            ls -lrt
+            ls -lrt bin/
 
 workflows:
   version: 2
