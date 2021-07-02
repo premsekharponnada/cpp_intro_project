@@ -15,12 +15,23 @@ jobs:
             git submodule init
             git submodule update
       - run:
-          name: Creating Build artifacts
+          name: Creating Build folder
           command: |
             mkdir build
             cd build
+      - save_cache:
+          key: v1-myapp-cache
+          paths:
+            - build
+      - run:
+          name: Creating Build artifacts
+          command: |
             cmake ..
             make
+      - run:
+          name: testing whats inside bin
+          command: ls -lrt bin/
+      
 
       - persist_to_workspace:
           root: .
