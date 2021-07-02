@@ -17,14 +17,13 @@ jobs:
       - run:
           name: Creating Build artifacts
           command: |
-            mkdir build
-            cd build
+            # mkdir build
+            # cd build
+            # cmake ..
+            # make
             cmake -S . -B build
             cmake --build build
-      #     command: "cmake -S . -B build"
-      # - run:
-      #     name: Creating Binary files
-      #     command: "cmake --build build"
+
       - persist_to_workspace:
           root: .
           paths: build

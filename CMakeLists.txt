@@ -1,5 +1,4 @@
-# cmake -H. -Bbuild
-# cmake --build build
+
 
 cmake_minimum_required(VERSION 3.16.3)
 set(CMAKE_CXX_STANDARD 11)
@@ -15,9 +14,6 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
-# add_executable(helloworld ${PROJECT_SOURCE_DIR}/test/test.cpp)
-
-# add_subdirectory(${CMAKE_BINARY_DIR}/googletest)
 
 enable_testing()
 
@@ -30,8 +26,6 @@ target_link_libraries(
   hello_test
   gtest_main
 )
-
-# add_test(hello_test, hello_test)
 
 include(CTest)
 include(GoogleTest)
