@@ -21,6 +21,7 @@ jobs:
             cd build
             cmake ..
             make
+            ctest
             # cmake -S . -B build
             # cmake --build build
 
