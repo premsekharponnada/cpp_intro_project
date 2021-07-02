@@ -20,6 +20,9 @@ jobs:
       - run:
           name: Creating Binary files
           command: "cmake --build build"
+      -persist_to_workspace:
+          root: .
+          paths: build
   # separate job for test
   test:
     executor: exectr
@@ -27,8 +30,10 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Unit Testing
-          command: "cd build && ctest"
+          name: Execute Tests
+          command: |
+            cd build
+            ctest
 workflows:
   version: 2
   build-and-test:
