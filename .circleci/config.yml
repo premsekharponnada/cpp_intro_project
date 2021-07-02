@@ -28,13 +28,10 @@ jobs:
             cd build
             cmake ..
             make 
-      
-
       - persist_to_workspace:
           root: .
           paths:
             - build/*
-            - bin/*
   # separate job for test
   test:
     executor: exectr
@@ -42,9 +39,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      # - run:
-      #     name: Execute Tests
-      #     command: cd build
 
       - run:
           name: testing whats inside bin
