@@ -17,12 +17,12 @@ jobs:
       - run:
           name: Creating Build artifacts
           command: |
-            # mkdir build
-            # cd build
-            # cmake ..
-            # make
-            cmake -S . -B build
-            cmake --build build
+            mkdir build
+            cd build
+            cmake ..
+            make
+            # cmake -S . -B build
+            # cmake --build build
 
       - persist_to_workspace:
           root: .
