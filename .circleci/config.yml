@@ -50,8 +50,8 @@ jobs:
             ctest
       - persist_to_workspace:
           root: .
-          paths:
-            - build/*
+          paths: 
+            - .
   # separate job for test
   test:
     executor: exectr
