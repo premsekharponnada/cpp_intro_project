@@ -23,7 +23,7 @@ jobs:
             make
 
       - persist_to_workspace:
-          root: /build
+          root: .
           paths:
             - build/*
   # separate job for test
@@ -31,7 +31,7 @@ jobs:
     executor: exectr
     steps:
       - attach_workspace:
-          at: /build
+          at: .
       - run:
           name: Execute Tests
           command: cd build
