@@ -21,8 +21,9 @@ jobs:
             cd build
             cmake ..
             make
-            ls -lrt bin/
-            ctest
+      - run:
+          name: checking what is inisde bin
+          command: ls -lrt bin/
 
       - persist_to_workspace:
           root: .
