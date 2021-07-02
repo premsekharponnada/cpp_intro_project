@@ -37,7 +37,6 @@ jobs:
           name: Execute Tests
           command: |
             cd build
-            cd build
 
 workflows:
   version: 2
