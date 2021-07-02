@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Execute Tests
           command: |
-            cd build
+            ctest
 
 workflows:
   version: 2
