@@ -53,8 +53,8 @@ jobs:
       - run:
           name: testing whats inside bin
           command: |
-          cd build
-          ./bin ls -lrt
+            cd build
+            ./bin ls -lrt
 
 workflows:
   version: 2
