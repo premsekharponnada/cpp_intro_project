@@ -38,20 +38,21 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - bin/*
+            - build/*
   # separate job for test
   test:
     executor: exectr
     steps:
+      -
       - attach_workspace:
           at: .
       - run:
           name: Execute Tests
-          command: cd bin
+          command: cd build
 
       - run:
           name: testing whats inside bin
-          command: ls -lrt
+          command: ./bin ls -lrt
 
 workflows:
   version: 2
