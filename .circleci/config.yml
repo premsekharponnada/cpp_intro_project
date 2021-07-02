@@ -47,7 +47,7 @@ jobs:
           at: .
       - run:
           name: Execute Tests
-          command: cd build
+          command: cd bin
 
       - run:
           name: testing whats inside bin
