@@ -20,7 +20,19 @@ jobs:
       - run:
           name: Creating Binary files
           command: "cmake --build build"
+
   test:
-    - run:
+    executor: exectr
+    steps:
+      - run:
         name: Unit Testing
         command: "cd build && ctest"
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
