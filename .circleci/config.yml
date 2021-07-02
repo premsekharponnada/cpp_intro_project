@@ -40,7 +40,8 @@ jobs:
             ls -lrt /bin
       - run:
           name: testing whats inside bin
-          command: ls -lrt /bin
+          command: |
+            ls -lrt /bin
       - run:
           name: executing test cases
           command: |
