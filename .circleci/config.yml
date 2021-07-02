@@ -46,13 +46,15 @@ jobs:
       -
       - attach_workspace:
           at: .
-      - run:
-          name: Execute Tests
-          command: cd build
+      # - run:
+      #     name: Execute Tests
+      #     command: cd build
 
       - run:
           name: testing whats inside bin
-          command: ./bin ls -lrt
+          command: |
+          cd build
+          ./bin ls -lrt
 
 workflows:
   version: 2
