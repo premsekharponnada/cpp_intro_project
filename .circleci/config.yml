@@ -29,16 +29,16 @@ jobs:
             cmake ..
             make 
       - persist_to_workspace:
-          root: /home/circleci/project
+          root: .
           paths: 
-            - build/*
+            - .
   # separate job for test
   test:
     executor: exectr
     steps:
       - checkout
       - attach_workspace:
-          at: /home/circleci/project
+          at: .
       - run:
           name: Executing tests
           command: |
