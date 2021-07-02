@@ -30,13 +30,15 @@ jobs:
             make
       - run:
           name: testing whats inside build
-          command: ls -lrt
+          command: |
+            cd build
+            ls -lrt
       
 
       - persist_to_workspace:
           root: .
           paths:
-            - build/*
+            - bin/*
   # separate job for test
   test:
     executor: exectr
