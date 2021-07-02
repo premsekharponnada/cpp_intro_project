@@ -44,7 +44,7 @@ jobs:
           name: testing whats inside bin
           command: |
             cd build
-            ls -lrt
+            ctest
 
 workflows:
   version: 2
