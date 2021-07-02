@@ -29,8 +29,8 @@ jobs:
             cmake ..
             make
       - run:
-          name: testing whats inside bin
-          command: ls -lrt bin/
+          name: testing whats inside build
+          command: ls -lrt
       
 
       - persist_to_workspace:
@@ -49,9 +49,7 @@ jobs:
 
       - run:
           name: testing whats inside bin
-          command: |
-            cd build
-            ls -lrt bin/
+          command: ls -lrt
 
 workflows:
   version: 2
