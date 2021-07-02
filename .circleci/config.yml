@@ -41,7 +41,17 @@ jobs:
           at: .
 
       - run:
-          name: testing whats inside bin
+          name: testing whats inside build 
+          command: |
+            cd build
+            ls -lrt
+      - run:
+          name: testing whats inside bin 
+          command: |
+            cd build
+            ls -lrt /bin
+      - run:
+          name: Executing tests
           command: |
             cd build
             ctest
