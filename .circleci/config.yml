@@ -17,20 +17,15 @@ jobs:
       - run:
           name: Creating Build files
           command: "cmake -S . -B build"
-
-  test:
-    executor: exectr
-    steps:
-      - checkout
-      - run:
-          name: Setup gtest
-          command: |
-            cd third_party
-            git submodule init
-            git submodule update
       - run:
           name: Creating Binary files
           command: "cmake --build build"
+  # separate job for test
+  test:
+    executor: exectr
+    steps:
+      - attach_workspace:
+          at: .
       - run:
           name: Unit Testing
           command: "cd build && ctest"
