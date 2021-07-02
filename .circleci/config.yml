@@ -21,13 +21,10 @@ jobs:
             cd build
             cmake ..
             make
-      - run:
-          name: checking what is inisde bin
-          command: ls -lrt bin/
 
       - persist_to_workspace:
           root: .
-          paths: build
+          paths: build/*
   # separate job for test
   test:
     executor: exectr
