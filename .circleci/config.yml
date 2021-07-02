@@ -28,26 +28,6 @@ jobs:
             cd build
             cmake ..
             make 
-      - run:
-          name: testing whats inside bin
-          command: |
-            ls -lrt /bin
-      - run:
-          name: testing whats inside build 
-          command: |
-            cd build
-            ls -lrt
-      - run:
-          name: testing whats inside bin inside build
-          command: |
-            cd build
-            ls -lrt /bin
-      
-      - run:
-          name: executing test cases
-          command: |
-            cd build
-            ctest
       - persist_to_workspace:
           root: .
           paths: 
@@ -59,17 +39,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-
-      - run:
-          name: testing whats inside build 
-          command: |
-            cd build
-            ls -lrt
-      - run:
-          name: testing whats inside bin 
-          command: |
-            cd build
-            ls -lrt /bin
       - run:
           name: Executing tests
           command: |
