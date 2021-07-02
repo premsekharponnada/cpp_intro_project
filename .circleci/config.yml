@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Creating Binary files
           command: "cmake --build build"
-      -persist_to_workspace:
+      - persist_to_workspace:
           root: .
           paths: build
   # separate job for test
