@@ -39,7 +39,7 @@ jobs:
   test:
     executor: exectr
     steps:
-      -
+      - checkout
       - attach_workspace:
           at: .
       # - run:
