@@ -19,7 +19,7 @@ Important links to read -- [setting up CI environment][cpp-url]
 
 To run the project, follow these commands in your local machine.
 
-1. First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
+First clone the repository using ` git clone https://github.com/premsekharponnada/cpp_intro_project`
 
 Go into the project directory `cd cpp_intro_project`
 
